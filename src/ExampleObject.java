@@ -1,7 +1,9 @@
-public class ExampleObject implements Nameable{
+//ЗАДАНИЕ 3,4 (ПРАКТИКА 4)
+public class ExampleObject implements Nameable, Priceable{
     String nameObj;
     int length;
     int width;
+    int price;
     public ExampleObject() {
         this.nameObj = "Car";
         this.length = 275;
@@ -9,10 +11,11 @@ public class ExampleObject implements Nameable{
 
     }
 
-    public ExampleObject(String nameObj, int length, int width) {
+    public ExampleObject(String nameObj, int length, int width, int price) {
         this.nameObj = nameObj;
         this.length = length;
         this.width = width;
+        this.price = price;
     }
 
     public String getName() {
@@ -32,16 +35,22 @@ public class ExampleObject implements Nameable{
     }
 
     @Override
+    public int getPrice() {
+        return price;
+    }
+
+    @Override
     public String toString() {
         return "Машина, " +
                 "название марки " + nameObj  +
                 ", длина " + length +
-                ", ширина " + width;
+                ", ширина " + width +
+                ", цена: " + price;
     }
 
     public static void main(String[] args) {
         ExampleObject car1 = new ExampleObject();
-        ExampleObject car2 = new ExampleObject("Бэха", 350, 250);
+        ExampleObject car2 = new ExampleObject("Бэха", 350, 250, 1500000000);
 
         car1.setNameObj("Мерин");
         car1.setLength(123);
@@ -52,6 +61,5 @@ public class ExampleObject implements Nameable{
 
 
     }
-
 
 }
