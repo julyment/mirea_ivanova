@@ -1,5 +1,7 @@
+package task_3_4;
+
 //ЗАДАНИЕ 3,4 (ПРАКТИКА 4)
-public class ExampleObject implements Nameable, Priceable{
+public class ExampleObject implements Nameable, Priceable {
     String nameObj;
     int length;
     int width;
