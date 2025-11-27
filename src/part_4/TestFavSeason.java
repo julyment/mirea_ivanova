@@ -1,3 +1,5 @@
+package part_4;
+
 public class TestFavSeason {
     public static void main(String[] args) {
         Seasons fav = Seasons.SPRING;

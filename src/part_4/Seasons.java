@@ -1,3 +1,5 @@
+package part_4;
+
 public enum Seasons {
     WINTER(-10),
     SPRING(15),
